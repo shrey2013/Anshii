@@ -1,0 +1,17 @@
+document.getElementById("noBtn").addEventListener("mouseover", function() {
+    let x = Math.random() * (window.innerWidth - 100);
+    let y = Math.random() * (window.innerHeight - 50);
+    this.style.left = x + "px";
+    this.style.top = y + "px";
+});
+
+document.getElementById("yesBtn").addEventListener("click", function() {
+    document.body.innerHTML = `
+        <div class="container">
+            <h1>🎉 Yay! Priyanshi is My Valentine! 🎉</h1>
+            <p>Love you sooo much, my cute popluuu! ❤🐰</p>
+            <img src="https://media.giphy.com/media/l3vRnTQXlbWJ5yxte/giphy.gif" width="200">
+        </div>
+    `;
+    document.body.style.background = "#ffccd5";
+});
